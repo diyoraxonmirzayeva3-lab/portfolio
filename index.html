@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diyoraxon Mirzayeva — Developer Portfolio</title>
+  <meta name="description" content="Diyoraxon Mirzayeva — frontend dasturchi portfoliosi / frontend developer portfolio.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Syne:wght@600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <canvas id="bg"></canvas>
+  <div class="progress" id="progress"></div>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <a href="#home" class="logo">D<span>.</span>M</a>
+    <nav class="links" id="links">
+      <a href="#about" data-i18n="nav_about">Men haqimda</a>
+      <a href="#skills" data-i18n="nav_skills">Ko'nikmalar</a>
+      <a href="#projects" data-i18n="nav_projects">Loyihalar</a>
+      <a href="#journey" data-i18n="nav_journey">Yo'l</a>
+      <a href="#contact" data-i18n="nav_contact">Aloqa</a>
+    </nav>
+    <div class="tools">
+      <button class="pill" id="langBtn" aria-label="Language">UZ</button>
+      <button class="pill" id="themeBtn" aria-label="Theme"><span id="themeIcon">☾</span></button>
+      <button class="burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow mono" data-i18n="hero_hi">Salom, men</p>
+        <h1 class="glitch" data-text="Diyoraxon Mirzayeva">Diyoraxon <br>Mirzayeva</h1>
+        <p class="role"><span id="typed"></span><span class="caret">|</span></p>
+        <p class="lead" data-i18n="hero_lead">Men g'oyalarni tezkor, chiroyli va jonli veb-tajribalarga aylantiraman.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary magnetic" data-i18n="hero_cta1">Ishlarimni ko'r</a>
+          <a href="#contact" class="btn ghost magnetic" data-i18n="hero_cta2">Bog'lanish</a>
+        </div>
+      </div>
+      <div class="hero-photo tilt">
+        <div class="blob"></div>
+        <div class="frame">
+          <img src="images/profile.jpg" alt="Diyoraxon Mirzayeva" onerror="this.onerror=null;this.src='images/profile.svg'">
+        </div>
+        <span class="chip c1 mono">&lt;HTML/&gt;</span>
+        <span class="chip c2 mono">{CSS}</span>
+        <span class="chip c3 mono">JS()</span>
+      </div>
+      <a href="#about" class="scroll mono">scroll ↓</a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee"><div class="track">
+      <span>CREATIVE ✦ DEVELOPER ✦ FRONTEND ✦ UI/UX ✦ ANIMATION ✦ </span>
+      <span>CREATIVE ✦ DEVELOPER ✦ FRONTEND ✦ UI/UX ✦ ANIMATION ✦ </span>
+      <span>CREATIVE ✦ DEVELOPER ✦ FRONTEND ✦ UI/UX ✦ ANIMATION ✦ </span>
+    </div></div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <h2 class="title reveal"><span class="mono num">01</span> <span data-i18n="about_title">Men haqimda</span></h2>
+      <div class="about-grid">
+        <p class="reveal big" data-i18n="about_p1">Men dasturchiman. Veb-saytlarni nafaqat ishlaydigan, balki his qilinadigan qilib yarataman: toza kod, silliq animatsiya va o'ylangan dizayn.</p>
+        <div class="stats reveal">
+          <div class="stat"><b data-count="3">0</b><span data-i18n="stat1">yil tajriba</span></div>
+          <div class="stat"><b data-count="25">0</b><span data-i18n="stat2">loyiha</span></div>
+          <div class="stat"><b data-count="100">0</b><span data-i18n="stat3">% ishtiyoq</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <h2 class="title reveal"><span class="mono num">02</span> <span data-i18n="skills_title">Ko'nikmalar</span></h2>
+      <div class="skills">
+        <div class="skill reveal"><h3>HTML5</h3><div class="bar"><i data-w="95"></i></div><span class="mono">95%</span></div>
+        <div class="skill reveal"><h3>CSS3 / SCSS</h3><div class="bar"><i data-w="90"></i></div><span class="mono">90%</span></div>
+        <div class="skill reveal"><h3>JavaScript</h3><div class="bar"><i data-w="85"></i></div><span class="mono">85%</span></div>
+        <div class="skill reveal"><h3>React</h3><div class="bar"><i data-w="75"></i></div><span class="mono">75%</span></div>
+        <div class="skill reveal"><h3>Git / GitHub</h3><div class="bar"><i data-w="80"></i></div><span class="mono">80%</span></div>
+        <div class="skill reveal"><h3>UI / UX</h3><div class="bar"><i data-w="70"></i></div><span class="mono">70%</span></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <h2 class="title reveal"><span class="mono num">03</span> <span data-i18n="projects_title">Loyihalar</span></h2>
+      <div class="projects">
+        <article class="card reveal tilt">
+          <img src="images/project1.svg" alt="Project 1">
+          <div class="info"><h3 data-i18n="p1_title">Onlayn do'kon</h3><p data-i18n="p1_desc">Zamonaviy e-commerce interfeysi.</p><div class="tags mono"><span>HTML</span><span>CSS</span><span>JS</span></div></div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="images/project2.svg" alt="Project 2">
+          <div class="info"><h3 data-i18n="p2_title">Vazifalar ilovasi</h3><p data-i18n="p2_desc">Drag & drop bilan to-do boshqaruvi.</p><div class="tags mono"><span>JS</span><span>LocalStorage</span></div></div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="images/project3.svg" alt="Project 3">
+          <div class="info"><h3 data-i18n="p3_title">Ob-havo paneli</h3><p data-i18n="p3_desc">API orqali jonli ob-havo ma'lumotlari.</p><div class="tags mono"><span>API</span><span>CSS</span></div></div>
+        </article>
+        <article class="card reveal tilt">
+          <img src="images/project4.svg" alt="Project 4">
+          <div class="info"><h3 data-i18n="p4_title">Landing sahifa</h3><p data-i18n="p4_desc">Animatsiyalarga boy brend sahifasi.</p><div class="tags mono"><span>GSAP</span><span>HTML</span></div></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <h2 class="title reveal"><span class="mono num">04</span> <span data-i18n="journey_title">Yo'lim</span></h2>
+      <ul class="timeline">
+        <li class="reveal"><span class="mono">2023</span><div><h3 data-i18n="j1_t">Dasturlashni boshladim</h3><p data-i18n="j1_d">HTML, CSS va JavaScript asoslarini o'rgandim.</p></div></li>
+        <li class="reveal"><span class="mono">2024</span><div><h3 data-i18n="j2_t">Birinchi loyihalar</h3><p data-i18n="j2_d">Real mijozlar uchun veb-saytlar yaratdim.</p></div></li>
+        <li class="reveal"><span class="mono">2025</span><div><h3 data-i18n="j3_t">Frameworklar</h3><p data-i18n="j3_d">React va zamonaviy vositalar bilan ishlay boshladim.</p></div></li>
+        <li class="reveal"><span class="mono">2026</span><div><h3 data-i18n="j4_t">Hozir</h3><p data-i18n="j4_d">Yangi g'oyalar va hamkorliklarga ochiqman.</p></div></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <h2 class="title reveal"><span class="mono num">05</span> <span data-i18n="contact_title">Keling, gaplashamiz</span></h2>
+      <a class="mail reveal" href="mailto:diyora@example.com">diyora@example.com</a>
+      <div class="socials reveal">
+        <a href="https://github.com/" target="_blank" rel="noopener" class="btn ghost magnetic">GitHub</a>
+        <a href="https://t.me/" target="_blank" rel="noopener" class="btn ghost magnetic">Telegram</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="btn ghost magnetic">LinkedIn</a>
+        <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn ghost magnetic">Instagram</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mono">© <span id="year"></span> Diyoraxon Mirzayeva · <span data-i18n="footer">Qalb bilan yaratilgan</span> ♥</footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
